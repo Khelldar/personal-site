@@ -52,7 +52,7 @@ nav ul {
 #resume {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 @media (max-width: 700px) {
@@ -74,6 +74,11 @@ nav ul {
 }
 
 .business-description {
-  font-size: small;
+  /* font-size: small; */
+  /* color: gray; */
+}
+
+.time-range {
+  /* font-size: small; */
   color: gray;
 }
