@@ -71,6 +71,7 @@ nav ul {
 
 #skills-table td {
   padding-right: 10px;
+  vertical-align: top;
 }
 
 .business-description {
