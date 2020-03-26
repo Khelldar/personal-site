@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "logo   navigation"
+    "main   main";
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "navigation"
+      "main";
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.area {
+  padding: 10px;
+}
+
+.logo {
+  grid-area: logo;
+  background: rgba(76, 175, 80, 0.2);
+}
+
+.navigation {
+  grid-area: navigation;
+  background: rgba(176, 175, 80, 0.2);
+}
+
+.main {
+  grid-area: main;
+  background: rgba(76, 75, 80, 0.05);
+}
+
+#skills-table {
+  border-spacing: 50px 0;
+}
